@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sticky Menu Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+  
+    .menu {
+      position: sticky;
+      top: 0px;
+      padding: 10px;
+      background-color: #ffaa71;
+      z-index: 2;
+      text-align: center;
+    }
+
+    .menu a {
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      color: white;
+    }
+
+    .article {
+      padding: 40px;
+      margin: 20px;
+      background-color: #f2f2f2;
+      border: 1px solid #ccc;
+      min-height: 600px;
+    }
+
+    h2 {
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="menu">
+    <a href="#physics">Physics</a>
+    <a href="#chemistry">Chemistry</a>
+    <a href="#biology">Biology</a>
+  </div>
+
+
+  <div id="physics" class="article">
+    <h2>Physics</h2>
+    <p>
+      Physics is the study of matter, energy, and the fundamental forces of nature. It explains how objects move and interact through space and time.
+    </p>
+  </div>
+
+  <div id="chemistry" class="article">
+    <h2>Chemistry</h2>
+    <p>
+      Chemistry is the science of substances and how they change during chemical reactions. It is essential to biology, physics, and environmental science.
+    </p>
+  </div>
+
+  <div id="biology" class="article">
+    <h2>Biology</h2>
+    <p>
+      Biology is the study of life and living organisms. It covers cell structure, genetics, evolution, and ecosystems.
+    </p>
+  </div>
+
+</body>
+</html>

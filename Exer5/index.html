@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pseudo-Element Badges</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f7f7f7;
+      padding: 20px;
+    }
+
+    .container {
+      background-color: #fff;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .container .new::after {
+      content: 'New';
+      font-size: 13px;
+      color: white;
+      background-color: goldenrod;
+      margin-left: 10px;
+      padding: 4px 12px;
+      border-radius: 5px;
+    }
+
+    .container .trending::after {
+      content: 'Trending';
+      font-size: 13px;
+      color: white;
+      background-color: palevioletred;
+      margin-left: 10px;
+      padding: 4px 12px;
+      border-radius: 5px;
+    }
+
+    h3 {
+      display: inline-block;
+    }
+
+    p {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h3 class="new">The Whispering Forest</h3>
+    <p>A mysterious tale set deep in the woods where trees speak and shadows whisper secrets of the past.</p>
+  </div>
+
+  <div class="container">
+    <h3 class="trending">Escape from Nebula-9</h3>
+    <p>A thrilling sci-fi adventure across galaxies, where courage and cleverness are humanity’s last hope.</p>
+  </div>
+
+</body>
+</html>
